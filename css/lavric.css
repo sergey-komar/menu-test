@@ -1,0 +1,36 @@
+body{
+    font-size: 30px;
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.number{
+}
+.number__block{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.some,
+.other,
+.number__item,
+.input__btn,
+.input {
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid grey;
+}
+.button{
+    margin-bottom: 30px;
+}
+.active{
+    box-shadow: 10px 10px 20px #222;
+    border: 1px solid red;
+}
+.form{
+    margin-top: 40px;
+}
