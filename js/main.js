@@ -9,8 +9,7 @@ mobile.addEventListener('click', function(){
 });
 
 
-
-// TABS
+//TABS
 const tabsItem = document.querySelector('.tabs__item');
 const tabsItemBtn = document.querySelectorAll('.tabs__item-btn');
 const tabsContent = document.querySelectorAll('.tabs__content');
@@ -48,41 +47,63 @@ tabsHide();
 tabsShow(0);
 
 
-const modalOpen = document.querySelectorAll('[data-modal]');
-const modal = document.querySelector('.modal');
-const modalClose = document.querySelector('[data-close]');
 
-   modalOpen.forEach(item => {
-        item.addEventListener('click', ()=>{
+const modalBtn = document.querySelectorAll('[data-modal]');
+const modal = document.querySelector('.modal');
+const modalCloseBtn = document.querySelector('[data-close]');
+const scroll = calcScroll();
+
+    modalBtn.forEach(btn =>{
+        btn.addEventListener('click', ()=>{
             modal.classList.add('show');
             modal.classList.remove('hide');
             document.body.style.overflow = 'hidden';
-        });
-   });
+            document.body.style.marginRight = `${scroll}px`;
+        })
+    });
 
-   modalClose.addEventListener('click', ()=>{
-        modal.classList.add('hide');
-        modal.classList.remove('show');
-        document.body.style.overflow = '';
-   });
+    modalCloseBtn.addEventListener('click', ()=>{
+            modal.classList.add('hide');
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+            document.body.style.marginRight = `0px`;
+    });
 
-   modal.addEventListener('click', (e)=>{
-    if(e.target === modal){
-        modal.classList.add('hide');
-        modal.classList.remove('show');
-        document.body.style.overflow = '';
+    modal.addEventListener('click', (e)=>{
+        if(e.target == modal){
+            modal.classList.add('hide');
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+            document.body.style.marginRight = `0px`;
+        }
+    });
+
+    document.addEventListener('keydown', (e)=>{
+        if(e.code == 'Escape' && modal.classList.contains('show')){
+            modal.classList.add('hide');
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+            document.body.style.marginRight = `0px`;
+        }
+    })
+
+// УБИРАЕМ ДЁРГАНИЕ МОДАЛЬНОГО ОКНА ПРИ ПОЯВЛЕНИИ
+function calcScroll(){
+    let div = document.createElement('div');
+    div.style.width = '50px';
+    div.style.height = '50px';
+    div.style.overflowY = 'scroll';
+    div.style.visibility = 'hidden';
+    
+    document.body.appendChild(div);
+    let scrollWidth = div.offsetWidth - div.clientWidth;
+    div.remove();
+    
+    return scrollWidth;
     }
-   })
-
-
-   document.addEventListener('keydown', (e) =>{
-    if(e.code === 'Escape' && modal.classList.contains('show')){
-        modal.classList.add('hide');
-        modal.classList.remove('show');
-        document.body.style.overflow = '';
-    }
-   });
-
+    // УБИРАЕМ ДЁРГАНИЕ МОДАЛЬНОГО ОКНА ПРИ ПОЯВЛЕНИИ
+    
+    
 
 
 //    images
