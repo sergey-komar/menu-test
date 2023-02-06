@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -136,8 +138,6 @@
                 
             </div>
 
-
-
             <section class="works">
       
                 <div class="container">
@@ -202,7 +202,127 @@
             </div>
         </div>
       </div>
+     
+
+
+      <div class="container">
+        <section class=styles id=styles>
+            <div class=container>
+                <p class=p-heading>Портрет на холсте</p>
+                <h2>Популярные стили рисунка</h2>
+                <div class="row">
+                    <div class="show row__item">
+                        <div class=styles-block>
+                            <img src=img/styles-1.jpg alt>
+                            <h4>Маслом</h4>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="show row__item">
+                        <div class=styles-block>
+                            <img src=img/styles-2.jpg alt>
+                            <h4>Акварелью</h4>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="show row__item">
+                        <div class=styles-block>
+                            <img src=img/styles-3.jpg alt>
+                            <h4>Карандашом</h4>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="show row__item">
+                        <div class=styles-block>
+                            <img src=img/styles-4.jpg alt>
+                            <h4>Ручкой</h4>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="hide hide-styles row__item">
+                        <div class=styles-block>
+                            <img src=img/styles-5.jpg alt>
+                            <h4>Пастелью</h4>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="hide hide-styles row__item">
+                        <div class=styles-block>
+                            <img src=img/styles-6.jpg alt>
+                            <h4>Поп-арт</h4>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="hide hide-styles row__item">
+                        <div class=styles-block>
+                            <img src=img/styles-7.png alt>
+                            <h4>Фотомозаика</h4>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="hide hide-styles row__item">
+                        <div class=styles-block>
+                            <img src=img/styles-8.jpg alt>
+                            <h4>Шарж</h4>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="button button-transparent button-styles">Посмотреть больше стилей</button>
+            </div>
+            <img class=paints src=assets/img/paints.png alt>
+        </section>
+      </div>
+
+
+      
+      <section class=calc>
+		<div class=container>
+			<p class=p-heading>Калькулятор</p>
+			<h2>Рассчитайте стоимость и получите скидку 30%</h2>
+			<div class=row>
+				<div class="col-md-4 col-offset-1">
+					<form class=form action=# method=POST enctype=multipart/form-data>
+						<h4>Загрузите свое фото</h4>
+						<div class=file_upload>
+							<button type=button>Загрузить фотографию</button>
+							<div>Файл не выбран</div>
+							<input type=file name=upload>
+						</div>
+						<select id=size>
+							<option value >Выберите размер картины</option>
+							<option value="500">40x50</option>
+							<option value="600">50x70</option>
+							<option value="700">70x70</option>
+							<option value="800">70x100</option>
+						</select>
+						<select id=material>
+							<option value >Выберите материал картины</option>
+							<option  value="1" title="Изящный, позволяет легко создавать текстуру, подходит для декоративных картин маслом.">Холст из волокна</option>
+							<option   value="1.2" title="Достаточно грубый и создает ощущение реальности, подходит для классических пейзажей, натюрмортов и портретов.">Льняной холст</option>
+							<option  value="1.3" title="Изящный, подходит для всех типов реалистичных портретов.">Холст из натурального хлопка</option>
+						</select>
+						<select id=options>
+							<option value="">Дополнительные услуги</option>
+							<option value="1000">Покрытие арт-гелем</option>
+							<option value="2000">Экспресс-изготовление</option>
+							<option value="3000">Доставка готовых работ </option>
+						</select>
+						<input type="text" class="promocode" placeholder="Введите ваш промокод">
+						<div class=calc-price>Для расчета нужно выбрать размер картины и материал картины</div>
+						<button class="button button-order">Быстрый заказ</button>
+					</form>
+				</div>
+				<div class="col-md-4 col-md-offset-2 hidden-sm hidden-xs">
+					<img src=img/calc-1.png alt>
+					<p class=calc-text>Пропорциональный размер изображения рассчитывается автоматически. Если Вы хотите кадрировать изображение или просто узнать стоимость желаемого размера картины, снимите галочку с поля «Пропорциональный»</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
    <script src="js/main.js"></script>
+   <script src="/js/main2.js"></script>
 </body>
 </html>
