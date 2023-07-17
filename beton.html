@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/beton.css">
+</head>
+<body>
+    
+<main>
+    <section class="calculator">
+        <div class="container">
+            <div class="calculator-block">
+
+                <div class="calculator__left">
+                    <div class="calculator__item">
+                        <label class="calculator__label"  >
+                           <span class="calculator__text">Один</span>
+                            <div class="calculator__box" >
+                                <input data-ratio="1" class="calculator__box-input" type="radio"  name="radio" checked>
+                                <span class="calculator__checkbox calculator__checkbox-blue"></span>
+                            </div>
+                        </label>
+                        <label class="calculator__label" >
+                            <span class="calculator__text">Два</span>
+                             <div class="calculator__box" >
+                                 <input data-ratio="2" class="calculator__box-input" type="radio" name="radio">
+                                 <span class="calculator__checkbox calculator__checkbox-red"></span>
+                             </div>
+                         </label>
+                         <label class="calculator__label" >
+                            <span class="calculator__text">Три</span>
+                             <div class="calculator__box" >
+                                 <input data-ratio="3" class="calculator__box-input" type="radio"  name="radio">
+                                 <span class="calculator__checkbox calculator__checkbox-green"></span>
+                             </div>
+                         </label>
+                        
+                    </div>
+
+                    <select id="cacl">
+                        <option class="calculator__option" value="2">Бетон 100</option>
+                        <option class="calculator__option" value="3">Бетон 200</option>
+                        <option class="calculator__option" value="4">Бетон 300</option>
+                    </select>
+
+                    <div class="calculator__params">
+                        <input class="calculator__params-item" type="text" id="shirina" placeholder="Ширина">
+                        <input class="calculator__params-item" type="text" id="dlina" placeholder="Длина">
+                    </div>
+                    <div class="calculator__params">
+                        <input class="calculator__params-item" type="text" id="visota" placeholder="Высота">
+                        <input class="calculator__params-item" type="text" id="tolshina" placeholder="Толщина">
+                    </div>
+
+                    <div class="calculator__sbros">
+                        <div class="calc__price">Рассчитать</div>
+                        <div class="calc__sbros">Сброс</div>
+                    </div>
+                    
+                </div>
+              
+                <div class="calculator__right">
+                    <div class="calculator__right-img">
+                        <div class="calculator__right-name">1</div>
+                        <img src="./img/beton.jpg" alt="img">
+                    </div>
+                    <div class="calculator__right-img">
+                        <div class="calculator__right-name">2</div>
+                        <img src="./img/beton.jpg" alt="img">
+                    </div>
+                    <div class="calculator__right-img">
+                        <div class="calculator__right-name">3</div>
+                        <img src="./img/beton.jpg" alt="img">
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <script src="/js/beton.js"></script>
+</body>
+</html>

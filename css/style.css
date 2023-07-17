@@ -127,6 +127,7 @@ html{
 
 
 
+
 @media(max-width:800px){
     .menu{
         position: fixed;
@@ -277,6 +278,8 @@ html{
     padding: 20px;
     padding-left: 0;
 }
+
+
 
 
 /* TABS */
@@ -614,4 +617,63 @@ calc {
     display: block;
     margin: 0 auto;
     font-family: 'Circe Bold', sans-serif;
+}
+
+
+
+
+/* SIZE */
+.sizes h2,
+.sizes .p-heading {
+  text-align: center;
+}
+.sizes-wrapper {
+  margin-top: 9rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.sizes-wrapper-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.sizes-block {
+  position: relative;
+}
+.sizes-block img {
+  max-width: 100%;
+}
+.sizes-block p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.sizes-block .size {
+  top: 3rem;
+  font-size: 2.4rem;
+  color: #86b7d2;
+  font-family: 'Circe Bold', sans-serif;
+}
+.sizes-block .starting-price {
+  bottom: 7rem;
+  text-decoration: line-through;
+}
+.sizes-block .final-price {
+  bottom: 4rem;
+  font-size: 1.8rem;
+  font-family: 'Circe Extra Bold', sans-serif;
+  color: black;
+}
+.sizes-block .sizes-hit {
+  width: auto;
+  display: inline-block;
+  background-color: #f99300;
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+  left: 6rem;
+  bottom: -2.5rem;
+  font-family: 'Circe Bold', sans-serif;
 }

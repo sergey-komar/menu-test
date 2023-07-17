@@ -8,9 +8,16 @@ mobile.addEventListener('click', function(){
     menu.classList.toggle('nav--active');
 
 
-});
+// Находим ссылки внутри мобильной навигации
+// const navLinks = document.querySelectorAll('.menu__list a');
 
-
+// Обходим ссылки методом forEach
+// navLinks.forEach(function (item) {
+  // Для каждой ссылки добавляем прослушку по событию "Клик"
+//   item.addEventListener('click', function () {
+//     mobile.classList.remove('nav-icon--active'); // Убираем активный класс у иконки моб. навигации
+//     menu.classList.remove('nav--active'); // Убираем активный класс у блока моб. навигации
+  })
 
 
 
@@ -71,37 +78,37 @@ mobile.addEventListener('click', function(){
 //         })
 //     });
 
-//     modalCloseBtn.addEventListener('click', ()=>{
-//             modal.classList.add('hide');
-//             modal.classList.remove('show');
-//             document.body.style.overflow = '';
-//             document.body.style.marginRight = `0px`;
-//     });
+    // modalCloseBtn.addEventListener('click', ()=>{
+    //         modal.classList.add('hide');
+    //         modal.classList.remove('show');
+    //         document.body.style.overflow = '';
+    //         document.body.style.marginRight = `0px`;
+    // });
 
-//     modal.addEventListener('click', (e)=>{
-//         if(e.target == modal){
-//             modal.classList.add('hide');
-//             modal.classList.remove('show');
-//             document.body.style.overflow = '';
-//             document.body.style.marginRight = `0px`;
-//         }
-//     });
+    // modal.addEventListener('click', (e)=>{
+    //     if(e.target == modal){
+    //         modal.classList.add('hide');
+    //         modal.classList.remove('show');
+    //         document.body.style.overflow = '';
+    //         document.body.style.marginRight = `0px`;
+    //     }
+    // });
 
-//     document.addEventListener('keydown', (e)=>{
-//         if(e.code == 'Escape' && modal.classList.contains('show')){
-//             modal.classList.add('hide');
-//             modal.classList.remove('show');
-//             document.body.style.overflow = '';
-//             document.body.style.marginRight = `0px`;
-//         }
-//     })
+    // document.addEventListener('keydown', (e)=>{
+    //     if(e.code == 'Escape' && modal.classList.contains('show')){
+    //         modal.classList.add('hide');
+    //         modal.classList.remove('show');
+    //         document.body.style.overflow = '';
+    //         document.body.style.marginRight = `0px`;
+    //     }
+    // })
 
 // // //УБИРАЕМ ДЁРГАНИЕ МОДАЛЬНОГО ОКНА ПРИ ПОЯВЛЕНИИ
 // function calcScroll(){
 //     let div = document.createElement('div');
 //     div.style.width = '50px';
 //     div.style.height = '50px';
-//     div.style.overflowY = 'scroll';
+//     div.style.overflow = 'scroll';
 //     div.style.visibility = 'hidden';
     
 //     document.body.append(div);
@@ -116,18 +123,18 @@ mobile.addEventListener('click', function(){
 //     //Показываем модальное окно как только долистаем до конца страницы
 //     function openByScroll(){
 //         window.addEventListener('scroll', ()=>{
-//             if(window.pageYOffset + document.documentElement.clientHeight >=
+//             if(window.scrollY + document.documentElement.clientHeight >=
 //                 document.documentElement.scrollHeight){
 //                     modal.classList.add('show');
 //                 }
 //         });
 //     }
 //     openByScroll();
-    //pageYOffset - сколько пикселей уже отлистал пользователь сверху(верхний отступ)
-    //document.documentElement.clientHeight- тот контент который сейчас виден пользователю
-    // document.documentElement.scrollHeight - полная высота страницы
+//     //pageYOffset - сколько пикселей уже отлистал пользователь сверху(верхний отступ)
+//     //document.documentElement.clientHeight- тот контент который сейчас виден пользователю
+//     //document.documentElement.scrollHeight - измерение высоты контента в элементе, включая содержимое, невидимое из-за прокрутки. (полная высота страницы)
   
-// ПОЯВЛЕНИЕ МОДАЛЬНОГО ОКНА ЧЕРЕЗ ОПРЕДЕЛЁННЫЙ ПРОМЕЖУТОК ВРЕМЕНИ
+// //ПОЯВЛЕНИЕ МОДАЛЬНОГО ОКНА ЧЕРЕЗ ОПРЕДЕЛЁННЫЙ ПРОМЕЖУТОК ВРЕМЕНИ
 // function showModalByTime(){
 //     setTimeout(function(){
 //        modal.classList.add('show');
