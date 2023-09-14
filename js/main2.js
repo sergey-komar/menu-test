@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     
-    
 // Калькулятор
 // const size = document.querySelector('#size');
 // const material = document.querySelector('#material');
@@ -81,6 +80,27 @@ sizesBlock.forEach(item => {
         sizeHide(item)
     })
 })
+
+
+
+const btnUp = document.querySelector('.btnUp');
+btn.addEventListener('click', ()=>{
+  window.scrollTo({
+    top: 0, 
+    behavior: 'smooth' 
+
+  });
+});
+function up() {
+  window.addEventListener('scroll', () => {
+    if(window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight){
+      btnUp.classList.add('btnUp-visible');
+    }else{
+      btnUp.classList.remove('btnUp-visible');
+    }
+  })
+}
+up();
 
 
 

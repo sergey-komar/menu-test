@@ -1,11 +1,12 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-const menu = document.querySelector('.menu');
-const mobile = document.querySelector('.nav-icon');
 
-mobile.addEventListener('click', function(){
-    this.classList.toggle('nav-icon--active');
-    menu.classList.toggle('nav--active');
+// const menu = document.querySelector('.menu');
+// const mobile = document.querySelector('.nav-icon');
+
+// mobile.addEventListener('click', function(){
+//     this.classList.toggle('nav-icon--active');
+//     menu.classList.toggle('nav--active');
 
 
 // Находим ссылки внутри мобильной навигации
@@ -17,8 +18,7 @@ mobile.addEventListener('click', function(){
 //   item.addEventListener('click', function () {
 //     mobile.classList.remove('nav-icon--active'); // Убираем активный класс у иконки моб. навигации
 //     menu.classList.remove('nav--active'); // Убираем активный класс у блока моб. навигации
-  })
-
+  
 
 
 
@@ -66,7 +66,7 @@ mobile.addEventListener('click', function(){
 // const modalBtn = document.querySelectorAll('[data-modal]');
 // const modal = document.querySelector('.modal');
 // const modalCloseBtn = document.querySelector('[data-close]');
-// const scroll = calcScroll();
+// const test = calcScroll();
 
 
 //     modalBtn.forEach(btn =>{
@@ -74,50 +74,54 @@ mobile.addEventListener('click', function(){
 //             modal.classList.add('show');
 //             modal.classList.remove('hide');
 //             document.body.style.overflow = 'hidden';
-//             document.body.style.marginRight = `${scroll}px`;
+//             document.body.style.marginRight = `${test}px`;
 //         })
 //     });
 
-    // modalCloseBtn.addEventListener('click', ()=>{
-    //         modal.classList.add('hide');
-    //         modal.classList.remove('show');
-    //         document.body.style.overflow = '';
-    //         document.body.style.marginRight = `0px`;
-    // });
+//     modalCloseBtn.addEventListener('click', ()=>{
+//             modal.classList.add('hide');
+//             modal.classList.remove('show');
+//             document.body.style.overflow = '';
+//             document.body.style.marginRight = `0px`;
+//     });
 
-    // modal.addEventListener('click', (e)=>{
-    //     if(e.target == modal){
-    //         modal.classList.add('hide');
-    //         modal.classList.remove('show');
-    //         document.body.style.overflow = '';
-    //         document.body.style.marginRight = `0px`;
-    //     }
-    // });
+//     modal.addEventListener('click', (e)=>{
+//         if(e.target == modal){
+//             modal.classList.add('hide');
+//             modal.classList.remove('show');
+//             document.body.style.overflow = '';
+//             document.body.style.marginRight = `0px`;
+//         }
+//     });
 
-    // document.addEventListener('keydown', (e)=>{
-    //     if(e.code == 'Escape' && modal.classList.contains('show')){
-    //         modal.classList.add('hide');
-    //         modal.classList.remove('show');
-    //         document.body.style.overflow = '';
-    //         document.body.style.marginRight = `0px`;
-    //     }
-    // })
+//     document.addEventListener('keydown', (e)=>{
+//         if(e.code == 'Escape' && modal.classList.contains('show')){
+//             modal.classList.add('hide');
+//             modal.classList.remove('show');
+//             document.body.style.overflow = '';
+//             document.body.style.marginRight = `0px`;
+//         }
+//     })
 
-// // //УБИРАЕМ ДЁРГАНИЕ МОДАЛЬНОГО ОКНА ПРИ ПОЯВЛЕНИИ
+// //УБИРАЕМ ДЁРГАНИЕ МОДАЛЬНОГО ОКНА ПРИ ПОЯВЛЕНИИ
 // function calcScroll(){
 //     let div = document.createElement('div');
 //     div.style.width = '50px';
 //     div.style.height = '50px';
-//     div.style.overflow = 'scroll';
+//     div.style.overflowY = 'scroll';
 //     div.style.visibility = 'hidden';
     
 //     document.body.append(div);
+
 //     let scrollWidth = div.offsetWidth - div.clientWidth;
+    
 //     div.remove();
     
 //     return scrollWidth;
 //     }
-//     //УБИРАЕМ ДЁРГАНИЕ МОДАЛЬНОГО ОКНА ПРИ ПОЯВЛЕНИИ
+
+   
+    //УБИРАЕМ ДЁРГАНИЕ МОДАЛЬНОГО ОКНА ПРИ ПОЯВЛЕНИИ
 
 
 //     //Показываем модальное окно как только долистаем до конца страницы
@@ -204,6 +208,28 @@ mobile.addEventListener('click', function(){
     
 //   });
 // });
+
+
+// const btn = document.querySelector('.btnUp');
+// btn.addEventListener('click', ()=>{
+//   window.scrollTo({
+//     top: 0, 
+//     behavior: 'smooth' 
+
+//   });
+// });
+// function up() {
+//   window.addEventListener('scroll', () => {
+//     if(window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight){
+//       btn.classList.add('btnUp-visible');
+//     }else{
+//       btn.classList.remove('btnUp-visible');
+//     }
+//   })
+// }
+// up();
+
+
 
 
 
