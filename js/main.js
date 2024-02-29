@@ -1,6 +1,18 @@
 window.addEventListener('DOMContentLoaded', () => {
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 // const menu = document.querySelector('.menu');
 // const mobile = document.querySelector('.nav-icon');
 
@@ -8,17 +20,21 @@ window.addEventListener('DOMContentLoaded', () => {
 //     this.classList.toggle('nav-icon--active');
 //     menu.classList.toggle('nav--active');
 
-
-// Находим ссылки внутри мобильной навигации
+// });
+// //Находим ссылки внутри мобильной навигации
 // const navLinks = document.querySelectorAll('.menu__list a');
 
-// Обходим ссылки методом forEach
+// //Обходим ссылки методом forEach
 // navLinks.forEach(function (item) {
-  // Для каждой ссылки добавляем прослушку по событию "Клик"
+//   //Для каждой ссылки добавляем прослушку по событию "Клик"
 //   item.addEventListener('click', function () {
 //     mobile.classList.remove('nav-icon--active'); // Убираем активный класс у иконки моб. навигации
 //     menu.classList.remove('nav--active'); // Убираем активный класс у блока моб. навигации
   
+//   });
+// });
+
+
 
 
 
@@ -210,7 +226,10 @@ window.addEventListener('DOMContentLoaded', () => {
 // });
 
 
+ 
+
 // const btn = document.querySelector('.btnUp');
+
 // btn.addEventListener('click', ()=>{
 //   window.scrollTo({
 //     top: 0, 
@@ -228,6 +247,12 @@ window.addEventListener('DOMContentLoaded', () => {
 //   })
 // }
 // up();
+
+
+
+
+
+
 
 
 

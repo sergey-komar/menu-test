@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     
+
 // Калькулятор
 // const size = document.querySelector('#size');
 // const material = document.querySelector('#material');
@@ -88,9 +89,9 @@ btn.addEventListener('click', ()=>{
   window.scrollTo({
     top: 0, 
     behavior: 'smooth' 
-
   });
 });
+
 function up() {
   window.addEventListener('scroll', () => {
     if(window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight){

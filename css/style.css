@@ -205,9 +205,10 @@ html{
     height: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(222, 184, 135,0.8);
+    background-color: rgba(237, 241, 241, 0.8);
     overflow: hidden;
 }
+
 .modal__inner {
   position: absolute;
    top: 50%;

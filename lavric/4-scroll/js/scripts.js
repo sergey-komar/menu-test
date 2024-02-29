@@ -61,7 +61,7 @@ const menuActive = menu.querySelector('.menu__link-active');
 	});
 	window.addEventListener('scroll', ()=>{
 		
-		let pos = window.pageYOffset;  
+		let pos = window.scrollY;  
 //innerHeight ВЫСОТА ТЕКУЩЕГО ОКНА экрана   
 		if(pos > window.innerHeight){ //window.innerHeight   
 			btnUp.classList.add('btnUp-visible')  

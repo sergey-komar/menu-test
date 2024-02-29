@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
         <div class="container">
             <div class="header">
                 <button data-modal class="logo">
@@ -35,6 +36,7 @@
                         </li>
                     </ul>
                 </nav>
+                
                 <div class="nav-icon">
                     <div class="nav-icon__middle"></div>
                 </div>
@@ -43,6 +45,7 @@
                 </button>
             </div>    
 
+            
             <div class="tabs">
                 <div class="tabs__item">
                     <button class="tabs__item-btn active">Tab1</button>
@@ -98,6 +101,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="promotion" id="timer">
                 <div class="containerr">
                     <div class="promotion__text">
@@ -188,24 +192,6 @@
             </section>
         </div>
 
-        
-    <div class="modal">
-        <div class="modal__inner">
-            <div class="modal__inner-block">
-                <form  class="modal-form">
-                    <input type="text" class="modal-form__input" placeholder="Имя">
-                    <input type="tel" class="modal-form__input" placeholder="Телефон">
-                    <button class="modal-form__btn">Заказать</button>
-                    <div data-close class="modal-form__close">Закрыть окно</div>
-                    <!-- <div data-close class="modal__close">&times;</div> -->
-                </form>
-            </div>
-        </div>
-      </div>
-     
-
-      
-
       <div class="container">
         <section class=styles id=style>
             <div class=container>
@@ -276,9 +262,9 @@
       </div>
 
 
-      <section class=calc id="price">
+    <section class="calc" id="price">
 		<div class=container>
-			<p class=p-heading>Калькулятор</p>
+			<p class="p-heading">Калькулятор</p>
 			<h2>Рассчитайте стоимость и получите скидку 30%</h2>
 			<div class=row>
 				<div class="col-md-4 col-offset-1">
@@ -321,7 +307,8 @@
 		</div>
 	</section>
 
-    <section class=sizes>
+   
+    <section class="sizes" id="test">
 		<div class=container>
 			<div class=p-heading>Популярные размеры и цены</div>
 			<h2>Можем изготовить картину любого размера!</h2>
@@ -356,6 +343,21 @@
 			</div>
 		</div>
 	</section>
+
+
+    <div class="modal">
+        <div class="modal__inner">
+            <div class="modal__inner-block">
+                <form  class="modal-form">
+                    <input type="text" class="modal-form__input" placeholder="Имя">
+                    <input type="tel" class="modal-form__input" placeholder="Телефон">
+                    <button class="modal-form__btn">Заказать</button>
+                    <div data-close class="modal-form__close">Закрыть окно</div>
+                    <!-- <div data-close class="modal__close">&times;</div> -->
+                </form>
+            </div>
+        </div>
+    </div>
 	<div class="btnUp">&uarr;</div>
 
    <script src="js/main.js"></script>
