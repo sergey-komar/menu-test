@@ -2,17 +2,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // const menu = document.querySelector('.menu');
 // const mobile = document.querySelector('.nav-icon');
 
@@ -33,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   
 //   });
 // });
+
 
 
 
@@ -203,6 +193,7 @@ window.addEventListener('DOMContentLoaded', () => {
 // }
 
 // images();
+
 
 
 
