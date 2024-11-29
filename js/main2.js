@@ -71,8 +71,6 @@ function sizeHide(block){
     })
 }
 
-
-
 sizesBlock.forEach(item => {
     item.addEventListener('mouseover', () => {
         sizeShow(item)
@@ -81,6 +79,8 @@ sizesBlock.forEach(item => {
         sizeHide(item)
     })
 })
+
+
 
 
 
